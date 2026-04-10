@@ -1,181 +1,194 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WikiLeaks v2</title>
+        <title>WikiLeaks</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style_wikileaks.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style_kv2.css">
     </head>
 
     <body>
-        <header class="main-header">
-            <div class="header-left">
-                <h1>WikiLeaks</h1>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li>Leaks</li>
-                    <li>News</li>
-                    <li>About</li>
-                    <li>Partners</li>
-                </ul>
-            </nav>
-            <div class="header-buttons">
-                <button>Donate</button>
-                <button>Submit</button>
+        <header class="top-navigation">
+            <div class="header-container">
+                <div class="header-left">
+
+                    <div class="nav-logo">
+                        <img src="https://wikileaks.org/static/img/wl-logo.png" alt="WikiLeaks Logo" class="hourglass">
+                        <h1>WikiLeaks</h1>
+                    </div>
+
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="list-group-item iluminar-item"><a href="#">Leaks</a></li>
+                            <li class="list-group-item iluminar-item"><a href="#">News</a></li>
+                            <li class="list-group-item iluminar-item"><a href="#">About</a></li>
+                            <li class="list-group-item iluminar-item"><a href="#">Partners</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="#" class="button-face donate-link">Donate</a>
+                    <a href="#" class="button-face submit-link">Submit</a>
+                </div>
             </div>
         </header>
 
-        <section class="search-section">
-            <input type="text" placeholder="Search Keyword">
+
+        <section class="search-box">
+            <div class="search-form">
+                <input type="text" class="search-query" placeholder="Search Keywords">
+            </div>
         </section>
 
-        <section>
-            <ul class="category-links">
-                <li>Intelligence</li>
-                <li>Global economy</li>
-                <li>International Politics</li>
-                <li>Corporations</li>
-                <li>Government</li>
-                <li>War & Military</li>
+        <nav class="tag-navigation">
+            <ul>
+                <li class="list-group-item iluminar-item"><a href="#">Intelligence</a></li>
+                <li class="list-group-item iluminar-item"><a href="#">Global Economy</a></li>
+                <li class="list-group-item iluminar-item"><a href="#">International Politics</a></li>
+                <li class="list-group-item iluminar-item"><a href="#">Corporations</a></li>
+                <li class="list-group-item iluminar-item"><a href="#">Government</a></li>
+                <li class="list-group-item iluminar-item"><a href="#">War & Military</a></li>
             </ul>
-        </section>
+        </nav>
 
-        <section class="featured-section">
+        <main class="content">
             <h2>Featured</h2>
-            <div class="articles-grid">
-                    <!-- 1 -->
-                <article>
-                    <img src="img/wiki_1.png" alt="The Intolerance Network">
-                    <h3>The Intolerance Network</h3>
-                    <p>
-                        Today, 5th August 2021, WikiLeaks publishes "The Intolerance Network" over 17,000 documents 
-                        from internationally active right wing campaigning organisations HazteOir and CitizenGO.
-                    </p>
-                    <time datetime="2021-08-05">05 August 2021</time>
+            <div class="grid" >
+                <article class="tile double-sized">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_1.png" alt="The Intolerance Network">
+                        </div>
+                        <h3 class="title">The Intolerance Network</h3>
+                        <p class="intro">
+                            Today, 5th August 2021, WikiLeaks publishes "The Intolerance Network" over 17,000 documents 
+                            from internationally active right wing campaigning organisations HazteOir and CitizenGO.
+                        </p>
+                        <time class="timestamp" datetime="2021-08-05">05 August 2021</time>
+                    </a>
                 </article>
 
-                <!-- 2 -->
-                <article>
-                    <img src="img/wiki_2.jpg" alt="Fishrot" width="300px" height="300px">
-                    <h3>Fishrot</h3>
-                    <p>
-                        Today, November 12, WikiLeaks publishes over 30000 documents from SAMHERJI.
-                    </p>
-                    <time datetime="2019-11-12">12 November 2019</time>
+                <article class="tile">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_2.jpg" alt="Fishrot">
+                        </div>
+                        <h3 class="title">Fishrot</h3>
+                        <p class="intro">
+                            Today, November 12, WikiLeaks publishes over 30000 documents from SAMHERJI.
+                        </p>
+                        <time class="timestamp" datetime="2019-11-12">12 November 2019</time>
+                    </a>
                 </article>
 
-                <!-- 3 -->
-                <article>
-                    <img src="img/wiki_3.png" alt="OPCW Douma">
-                    <h3>OPCW Douma</h3>
-                    <p>
-                        Today, October 23, WikiLeaks publishes a statement made by a panel that listened to testimony 
-                        and reviewed evidence from a whistleblower from the OPCW (update).
-                    </p>
-                    <time datetime="2019-10-23">23 October 2019</time>
+                <article class="tile">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_3.png" alt="OPCW Douma">
+                        </div>
+                        <h3 class="title">OPCW Douma</h3>
+                        <p class="intro">
+                            Today, October 23, WikiLeaks publishes a statement made by a panel that listened to testimony 
+                            and reviewed evidence from a whistleblower from the OPCW (update).
+                        </p>
+                        <time class="timestamp" datetime="2019-10-23">23 October 2019</time>
+                    </a>
                 </article>
 
-                <!-- 4 -->
-                <article>
-                    <img src="img/wiki_4.png" alt="Pope's Orders">
-                    <h3>Pope's Orders</h3>
-                    <p>
-                        Today, January 30th WikiLeaks publishes a set of documents from the Catholic Church, 
-                        shedding light on the power struggle within highest offices.
-                    </p>
-                    <time datetime="2019-01-30">30 January 2019</time>
+                <article class="tile">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_4.png" alt="Pope's Orders">
+                        </div>
+                        <h3 class="title">Pope's Orders</h3>
+                        <p class="intro">
+                            Today, January 30th WikiLeaks publishes a set of documents from the Catholic Church, 
+                            shedding light on the power struggle within highest offices.
+                        </p>
+                        <time class="timestamp" datetime="2019-01-30">30 January 2019</time>
+                    </a>
                 </article>
 
-                <!-- 5 -->
-                <article>
-                    <img src="img/wiki_5.jpg" alt="US Embassy Shopping List">
-                    <h3>US Embassy Shopping List</h3>
-                    <p>
-                        Today, 21 December 2018, WikiLeaks publishes a searchable database of more than 16,000 
-                        procurement requests posted by United States embassies around the world.
-                    </p>
-                    <time datetime="2018-12-21">21 December 2018</time>
+                <article class="tile">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_5.jpg" alt="US Embassy Shopping List">
+                        </div>
+                        <h3 class="title">US Embassy Shopping List</h3>
+                        <p class="intro">
+                            Today, 21 December 2018, WikiLeaks publishes a searchable database of more than 16,000 
+                            procurement requests posted by United States embassies around the world.
+                        </p>
+                        <time class="timestamp" datetime="2018-12-21">21 December 2018</time>
+                    </a>
                 </article>
 
-                <!-- 6 -->
-                <article>
-                    <img src="img/wiki_6.png" alt="Amazon Atlas">
-                    <h3>Amazon Atlas</h3>
-                    <p>
-                        Today, 11 Oct 2018, WikiLeaks publishes a highly confidential internal document 
-                        from the cloud computing provider Amazon.
-                    </p>
-                    <time datetime="2018-10-11">11 October 2018</time>
+                <article class="tile">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_6.png" alt="Amazon Atlas">
+                        </div>
+                        <h3 class="title">Amazon Atlas</h3>
+                        <p class="intro">
+                            Today, 11 Oct 2018, WikiLeaks publishes a highly confidential internal document 
+                            from the cloud computing provider Amazon.
+                        </p>
+                        <time class="timestamp" datetime="2018-10-11">11 October 2018</time>
+                    </a>
                 </article>
 
-                <!-- 7 -->
-                <article>
-                    <img src="img/wiki_7.png" alt="Dealmaker: Al Yousef">
-                    <h3>Dealmaker: Al Yousef</h3>
-                    <p>
-                        Today, 28 September 2018, WikiLeaks releases a secret document from the ICC 
-                        pertaining to a dispute over commission payment in relation to $3.6B arms deal.
-                    </p>
-                    <time datetime="2018-09-28">28 September 2018</time>
+                <article class="tile">
+                    <a href="#">
+                        <div class="teaser">
+                            <img src="img/wiki_7.png" alt="Dealmaker: Al Yousef">
+                        </div>
+                        <h3 class="title">Dealmaker: Al Yousef</h3>
+                        <p class="intro">
+                            Today, 28 September 2018, WikiLeaks releases a secret document from the ICC 
+                            pertaining to a dispute over commission payment in relation to $3.6B arms deal.
+                        </p>
+                        <time class="timestamp" datetime="2018-09-28">28 September 2018</time>
+                    </a>
                 </article>
             </div>
-        </section>
+        </main>
 
-        <footer>
-            <div>
-                <a href="#">Top</a>
-            </div>
+        <footer class="footer-recommendations">
+            <div class="footer-wrapper">
+                <div class="recommendation-container">
+                    <a href="#" class="top">Top</a>
+                    
+                    <ul class="recommendation-links">
+                        <li class="list-group-item iluminar-item">
+                            <div class="teaser"><img src="img/wikileaks-logo.png" alt="logo wikileaks" class="spip_logos"></div>
+                            <p>WL Research Community - user contributed research based on documents published by WikiLeaks.</p>
+                        </li>
+                        <li class="list-group-item iluminar-item">
+                            <div class="teaser"><img src="img/tor-logo.png" alt="Tor" class="spip_logos"></div>
+                            <p>Tor is an encrypted anonymising network that makes it harder to intercept internet communications...</p>
+                        </li>
+                        <li class="list-group-item iluminar-item">
+                            <div class="teaser"><img src="img/tails-logo.png" alt="Tails" class="spip_logos"></div>
+                            <p>Tails is a live operating system, that you can start on almost any computer from a DVD...</p>
+                        </li>
+                        <li class="list-group-item iluminar-item">
+                            <div class="teaser"><img src="img/courage-logo.png" alt="Courage Foundation" class="spip_logos"></div>
+                            <p>The Courage Foundation is an international organisation that supports those who risk life or liberty...</p>
+                        </li>
+                        <li class="list-group-item iluminar-item">
+                            <div class="teaser"><img src="img/bitcoin-logo.png" alt="Bitcoin" class="spip_logos"></div>
+                            <p>Bitcoin uses peer-to-peer technology to operate with no central authority or banks...</p>
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Contenido principal del footer -->
-            <section class="footer-grid">
-                <article>
-                    <img src="img/wikileaks-logo.png" alt="logo wikileaks">
-                    <p>
-                        WL Research Community - user contributed research based on documents 
-                        published by WikiLeaks.
-                    </p>
-                </article>
-
-
-                <article>
-                    <img src="img/tor-logo.png" alt="Tor">
-                    <p>
-                        Tor is an encrypted anonymising network that makes it harder to intercept 
-                        internet communications, or see where communications are coming from or going to.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="img/tails-logo.png" alt="Tails">
-                    <p>
-                        Tails is a live operating system, that you can start on almost any computer 
-                        from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="img/courage-logo.png" alt="Courage Foundation">
-                    <p>
-                        The Courage Foundation is an international organisation that supports those 
-                        who risk life or liberty to make significant contributions to the historical record.
-                    </p>
-                </article>
-
-                <article>
-                    <img src="img/bitcoin-logo.png" alt="Bitcoin">
-                    <p>
-                        Bitcoin uses peer-to-peer technology to operate with no central authority 
-                        or banks; managing transactions and the issuing of bitcoins is carried out collectively.
-                    </p>
-                </article>
-            </section>
-
-            <div class="footer-bottom">
-                <a href="https://www.facebook.com/wikileaks">Facebook</a>
-                <a href="https://x.com/wikileaks">Twitter</a>
+                <ul class="social-links text-center">
+                    <li class="list-group-item iluminar-item"><a href="https://www.facebook.com/wikileaks"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png" alt="Facebook" style="height: 28px;"></a></li>
+                    <li class="list-group-item iluminar-item"><a href="https://x.com/wikileaks"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuYPcs897D87cIvoZlJzHQS60keckXTZYyA&s" alt="Twitter" style="height: 28px;"></a></li>
+                </ul>
             </div>
         </footer>
-
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
-</html> 
+</html>

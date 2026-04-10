@@ -16,3 +16,8 @@ div{
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr 2fr;
 }
+
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}

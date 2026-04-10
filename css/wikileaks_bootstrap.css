@@ -1,0 +1,56 @@
+/* --- Ajustes Generales --- */
+body {
+    padding-top: 70px; /* Vital para que el header fijo de Bootstrap no tape el buscador */
+}
+
+/* --- Colores y Fuentes de Marca --- */
+.text-dark-blue {
+    color: #093a41 !important;
+}
+
+.font-georgia {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* --- Tarjetas de Noticias --- */
+.custom-card {
+    height: 30em; /* Mantenemos la altura fija de las tarjetas */
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efecto hover elegante */
+}
+
+/* --- Botón Flotante del Footer --- */
+.btn-top-floating {
+    background-color: #fff;
+    border: #cccccc 1px solid;
+    border-radius: 40px;
+    color: #555555;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-top-floating:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Para limitar el tamaño de los logos del footer */
+.max-h-60 {
+    max-height: 60px;
+}

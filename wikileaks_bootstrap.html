@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiLeaks (Bootstrap Edition)</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/wikileaks_bootstrap.css">
+</head>
+
+<body>
+    <header class="fixed-top bg-white border-bottom px-3 py-2">
+        <div class="container-xl d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-2 pe-3">
+                    <img src="https://wikileaks.org/static/img/wl-logo.png" alt="WikiLeaks Logo" style="height: 30px;">
+                    <h1 class="m-0 fs-4 text-dark font-georgia">WikiLeaks</h1>
+                </div>
+                
+                <nav class="d-none d-md-block"> <ul class="list-unstyled d-flex gap-3 m-0">
+                        <li><a href="#" class="text-decoration-none text-secondary tracking-wide">Leaks</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary tracking-wide">News</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary tracking-wide">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary tracking-wide">Partners</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="d-flex gap-2">
+                <button class="btn btn-danger tracking-wide text-white">Donate</button>
+                <button class="btn btn-secondary tracking-wide">Submit</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container text-center mt-5 pt-4 mb-4">
+        <div class="mx-auto" style="max-width: 600px;">
+            <input type="text" class="form-control form-control-lg fs-6 text-secondary" placeholder="Search Keywords">
+        </div>
+    </section>
+
+    <nav class="container text-center mb-5">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-4">
+            <li><a href="#" class="text-decoration-none text-dark-blue fw-bold">Intelligence</a></li>
+            <li><a href="#" class="text-decoration-none text-dark-blue fw-bold">Global Economy</a></li>
+            <li><a href="#" class="text-decoration-none text-dark-blue fw-bold">International Politics</a></li>
+            <li><a href="#" class="text-decoration-none text-dark-blue fw-bold">Corporations</a></li>
+            <li><a href="#" class="text-decoration-none text-dark-blue fw-bold">Government</a></li>
+            <li><a href="#" class="text-decoration-none text-dark-blue fw-bold">War & Military</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-xl mb-5">
+        <h2 class="text-dark-blue mb-4">Featured</h2>
+        
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_1.png" class="img-fluid" alt="The Intolerance Network">
+                    </div>
+                    <h3 class="h5 fw-bold">The Intolerance Network</h3>
+                    <p class="text-secondary small">
+                        Today, 5th August 2021, WikiLeaks publishes "The Intolerance Network" over 17,000 documents 
+                        from internationally active right wing campaigning organisations HazteOir and CitizenGO.
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">05 August 2021</time>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_2.jpg" class="img-fluid" alt="Fishrot">
+                    </div>
+                    <h3 class="h5 fw-bold">Fishrot</h3>
+                    <p class="text-secondary small">
+                        Today, November 12, WikiLeaks publishes over 30000 documents from SAMHERJI.
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">12 November 2019</time>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_3.png" class="img-fluid" alt="OPCW Douma">
+                    </div>
+                    <h3 class="h5 fw-bold">OPCW Douma</h3>
+                    <p class="text-secondary small">
+                        Today, October 23, WikiLeaks publishes a statement made by a panel that listened to testimony 
+                        and reviewed evidence from a whistleblower from the OPCW (update).
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">23 October 2019</time>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_4.png" class="img-fluid" alt="Pope's Orders">
+                    </div>
+                    <h3 class="h5 fw-bold">Pope's Orders</h3>
+                    <p class="text-secondary small">
+                        Today, January 30th WikiLeaks publishes a set of documents from the Catholic Church...
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">30 January 2019</time>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_5.jpg" class="img-fluid" alt="US Embassy">
+                    </div>
+                    <h3 class="h5 fw-bold">US Embassy Shopping List</h3>
+                    <p class="text-secondary small">
+                        Today, 21 December 2018, WikiLeaks publishes a searchable database of more than 16,000 procurement requests...
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">21 December 2018</time>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_6.png" class="img-fluid" alt="Amazon Atlas">
+                    </div>
+                    <h3 class="h5 fw-bold">Amazon Atlas</h3>
+                    <p class="text-secondary small">
+                        Today, 11 Oct 2018, WikiLeaks publishes a highly confidential internal document...
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">11 October 2018</time>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#" class="text-decoration-none text-dark d-block bg-light border rounded p-2 position-relative custom-card">
+                    <div class="bg-white text-center mb-3 overflow-hidden">
+                        <img src="img/wiki_7.png" class="img-fluid" alt="Dealmaker">
+                    </div>
+                    <h3 class="h5 fw-bold">Dealmaker: Al Yousef</h3>
+                    <p class="text-secondary small">
+                        Today, 28 September 2018, WikiLeaks releases a secret document from the ICC...
+                    </p>
+                    <time class="position-absolute bottom-0 end-0 p-2 text-secondary small">28 September 2018</time>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-light mt-5 pt-5 pb-4 position-relative border-top">
+        <div class="container-xl position-relative">
+            
+            <a href="#" class="btn-top-floating">Top</a>
+            
+            <div class="row row-cols-1 row-cols-md-5 g-4 mt-2">
+                <div class="col">
+                    <div class="d-flex align-items-center mb-2" style="height: 80px;">
+                        <img src="img/wikileaks-logo.png" alt="logo wikileaks" class="img-fluid max-h-60">
+                    </div>
+                    <p class="small text-secondary">WL Research Community - user contributed research based on documents published by WikiLeaks.</p>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center mb-2" style="height: 80px;">
+                        <img src="img/tor-logo.png" alt="Tor" class="img-fluid max-h-60">
+                    </div>
+                    <p class="small text-secondary">Tor is an encrypted anonymising network that makes it harder to intercept internet communications...</p>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center mb-2" style="height: 80px;">
+                        <img src="img/tails-logo.png" alt="Tails" class="img-fluid max-h-60">
+                    </div>
+                    <p class="small text-secondary">Tails is a live operating system, that you can start on almost any computer from a DVD...</p>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center mb-2" style="height: 80px;">
+                        <img src="img/courage-logo.png" alt="Courage" class="img-fluid max-h-60">
+                    </div>
+                    <p class="small text-secondary">The Courage Foundation is an international organisation that supports those who risk life or liberty...</p>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center mb-2" style="height: 80px;">
+                        <img src="img/bitcoin-logo.png" alt="Bitcoin" class="img-fluid max-h-60">
+                    </div>
+                    <p class="small text-secondary">Bitcoin uses peer-to-peer technology to operate with no central authority or banks...</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://www.facebook.com/wikileaks" class="d-inline-block mx-3"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png" alt="Facebook" style="height: 24px;"></a>
+                <a href="https://x.com/wikileaks" class="d-inline-block mx-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuYPcs897D87cIvoZlJzHQS60keckXTZYyA&s" alt="Twitter" style="height: 24px;"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
