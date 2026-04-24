@@ -7,19 +7,19 @@ import fs from 'fs';
 //Esta función deberá mostrar deberá mostrar una página HTML 
 function darBienvenida(req, res) {
     fs.readFile('bienvenida.html', 'utf8', (error, data) => {
-        if (error) {
-            //Escribe qué significa el 500 
-            // El 500 significa "Internal Server Error". Ocurre cuando el servidor falla al procesar la solicitud.
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
+         if (error) {
+         //Escribe qué significa el 500 
+        // El 500 significa "Internal Server Error". Ocurre cuando el servidor falla al procesar la solicitud.
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
             res.end('Oh no!!!! El servidor falló al cargar el archivo.');
-            return;
-        }
+          return;
+    }
 
         //Escribe qué significa el 200
-        // El 200 significa "OK". La solicitud fue exitosa.
+      // El 200 significa "OK". La solicitud fue exitosa.
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(data);
-    });
+  });
 }
 
 //Esta función deberá enviar un json con los datos de los usuarios
@@ -29,7 +29,7 @@ function getUsuarios(req, res) {
     const listaUsuarios = [
         { "nombre": "Punk", "saldo": "0" },
         { "nombre": "Anarky", "saldo": "1000" }
-    ];
+  ];
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
 
@@ -41,10 +41,10 @@ function getUsuarios(req, res) {
 function mostrarPerfil(req, res) {
     fs.readFile('perfil.html', 'utf8', (error, data) => {
         if (error) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Oh no!!!!');
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('Oh no!!!!');
             return;
-        }
+          }
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(data);
     });
@@ -53,10 +53,10 @@ function mostrarPerfil(req, res) {
 function mostrarMovimientos(req, res) {
     //Construye una página básica movimientos.html
     fs.readFile('movimientos.html', 'utf8', (error, data) => {
-        if (error) {
+      if (error) {
             res.writeHead(500, { 'Content-Type': 'text/plain' });
             res.end('Oh no!!!!');
-            return;
+          return;
         }
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(data);
@@ -167,30 +167,57 @@ function getProfile(req, res) {}
 // /v1/orders
 // URL inventada para simular la creación de una orden en Kueski Pay
 function createKueskiOrder(req, res) {
-    const response = {
-      "order_id": "ord_8984jd93kd",
-      "status": "CREATED",
-      "checkout_url": "https://pay.kueski.com/checkout/ord_8984jd93kd",
-      "expires_at": "2026-04-23T18:00:00Z"
-    };
-    
-    res.writeHead(201, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify(response));
+    const response = {
+      "order_id": "ord_8984jd93kd",
+      "status": "CREATED",
+      "checkout_url": "https://pay.kueski.com/checkout/ord_8984jd93kd",
+      "expires_at": "2026-04-23T18:00:00Z"
+    };
+    
+    res.writeHead(201, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(response));
 }
 
 // GET: Consultar el estado de una orden en Kueski Pay
 // /v1/orders/{order_id}
 function getKueskiOrderStatus(req, res) {
+    const response = {
+      "order_id": "ord_8984jd93kd",
+      "amount": 2500.00,
+      "currency": "MXN",
+      "status": "APPROVED",
+      "customer_info": {
+        "email": "cliente@email.com"
+      },
+      "created_at": "2026-04-23T17:30:00Z",
+      "approved_at": "2026-04-23T17:35:12Z"
+    };
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(response));
+}
+
+// POST: Cancelar una orden de pago existente en Kueski Pay
+// /v1/orders/{order_id}/cancel
+function cancelKueskiOrder(req, res) {
     const response = {
       "order_id": "ord_8984jd93kd",
-      "amount": 2500.00,
-      "currency": "MXN",
-      "status": "APPROVED",
-      "customer_info": {
-        "email": "cliente@email.com"
-      },
-      "created_at": "2026-04-23T17:30:00Z",
-      "approved_at": "2026-04-23T17:35:12Z"
+      "status": "CANCELED",
+      "message": "La orden fue cancelada exitosamente."
+    };
+    
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(response));
+}
+
+// GET: Obtener las opciones de quincenas disponibles para un usuario
+// /v1/payment-terms
+function getKueskiPaymentTerms(req, res) {
+    const response = {
+      "available_terms": [
+        { "quinces": 4, "interest_rate": "0%" },
+        { "quinces": 6, "interest_rate": "5.5%" }
+      ]
     };
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
