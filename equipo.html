@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Equipo</title>
+</head>
+<body>
+    <h1>Equipo de Desarrollo</h1>
+    <ul>
+        <li><strong>Carlos Andres Gloria:</strong> Valoro mucho su excelente lógica estructurada para resolver problemas complejos.</li>
+        <li><strong>David Bribiesca Valtierra:</strong> Valoro su gran capacidad de organización en las entregas del proyecto.</li>
+    </ul>
+
+    <h2>Foto del equipo</h2>
+    <img src="foto_equipo.jpg" alt="Foto del equipo">
+    
+    <h3>¿Puedo ver la imagen?</h3>
+    <p><strong>Respuesta:</strong> No, la imagen aparece rota. Esto sucede porque el servidor de Node.js actual (<code>servidor.js</code>) solo tiene rutas definidas con la lógica de <code>if/else</code> para devolver HTML o JSON. No hemos programado ninguna función para leer y servir archivos estáticos con extensiones como .jpg o .png. Por lo tanto, cuando el navegador pide la imagen, el servidor cae en la ruta por defecto y devuelve el error 404.</p>
+</body>
+</html>
