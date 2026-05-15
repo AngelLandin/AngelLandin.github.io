@@ -142,7 +142,7 @@ const servidor = http.createServer(async (req, res) => {
   }
 });
 
-const puerto = 2000;
+const puerto = 2100;
 
 servidor.listen(puerto, () => {
   console.log(`Servidor escuchando en http://localhost:${puerto}`);
