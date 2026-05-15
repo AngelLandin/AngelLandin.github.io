@@ -121,6 +121,36 @@ app.get('/v1/payment-terms', (req, res) => {
 });
 
 
+// Solución Ejercicio 12: Uso de parámetros (req.params)
+app.get('/api/kueski/usuarios/:idUsuario/credito', (req, res) => {
+    // 1. Extraemos el parámetro de la ruta
+    const id = req.params.idUsuario;
+
+    // 2. Simulamos una base de datos de usuarios de Kueski Pay
+    const baseDeDatosCredito = {
+        "USR-101": { limite: 5000, disponible: 2500, estatus: "Al corriente" },
+        "USR-202": { limite: 10000, disponible: 10000, estatus: "Nuevo" },
+        "USR-303": { limite: 1500, disponible: 0, estatus: "Atrasado" }
+    };
+
+    // 3. Buscamos al usuario usando el parámetro recibido
+    const infoUsuario = baseDeDatosCredito[id];
+
+    // 4. Validamos y respondemos
+    if (infoUsuario) {
+        res.status(200).json({
+            mensaje: "Información de crédito recuperada exitosamente.",
+            usuario_id: id,
+            datos_financieros: infoUsuario
+        });
+    } else {
+        res.status(404).json({
+            error: `El usuario con ID ${id} no fue encontrado en el sistema de Kueski.`
+        });
+    }
+});
+
+
 // --- Manejo del Error 404 ---
 // app.use al final captura cualquier ruta que no haya hecho "match" arriba
 app.use((req, res) => {
